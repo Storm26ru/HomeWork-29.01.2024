@@ -3,7 +3,7 @@ using namespace std;
 //#define BITWISE_OPERATORS
 //#define ARRAY
 //#define SHIFT_L
-#define SHIFT_R
+//#define SHIFT_R
 
 
 void main()
@@ -73,7 +73,7 @@ void main()
 
 	cout << "Введите число от 0 до 10: "; cin >> shift;
 	
-	cout << "Массив сдвинут в лево на " << shift << " элементов." << endl;
+	cout << "Массив циклически сдвинут в лево на " << shift << " элементов." << endl;
 	for (int i = 0; i < SIZE; i++)
 	{
 		if (i + shift < SIZE) Array_shift[i] = Array[i + shift];
